@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="631.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.PenjualanController">
+   <children>
+      <Button fx:id="btnBack" layoutX="831.0" layoutY="23.0" mnemonicParsing="false" onAction="#openMenu" text="Kembali" />
+      <Button fx:id="btnBarang" layoutX="118.0" layoutY="266.0" mnemonicParsing="false" onAction="#seePenjualanBarang" prefHeight="98.0" prefWidth="259.0" text="Barang">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMakanan" layoutX="497.0" layoutY="266.0" mnemonicParsing="false" onAction="#seePenjualanMakanan" prefHeight="98.0" prefWidth="259.0" text="Makanan">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

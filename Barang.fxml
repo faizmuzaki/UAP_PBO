@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="631.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.BarangController">
+   <children>
+      <Button fx:id="btnBack" layoutX="792.0" layoutY="34.0" mnemonicParsing="false" onAction="#openMenu" prefHeight="26.0" prefWidth="85.0" text="Kembali" />
+      <Label layoutX="141.0" layoutY="94.0" text="Tambah Barang">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="146.0" text="Barcode" />
+      <TextField fx:id="fieldBarcode" layoutX="167.0" layoutY="146.0" />
+      <Label layoutX="55.0" layoutY="187.0" text="Expired" />
+      <TextField fx:id="fieldExpired" layoutX="167.0" layoutY="187.0" />
+      <Label layoutX="55.0" layoutY="225.0" text="Nama Produk" />
+      <TextField fx:id="fieldNama" layoutX="167.0" layoutY="225.0" />
+      <Label layoutX="55.0" layoutY="268.0" text="Harga" />
+      <TextField fx:id="fieldHarga" layoutX="167.0" layoutY="268.0" />
+      <Label layoutX="55.0" layoutY="307.0" text="Jumlah" />
+      <TextField fx:id="fieldJumlah" layoutX="167.0" layoutY="307.0" />
+      <Label layoutX="55.0" layoutY="353.0" text="Diskon" />
+      <TextField fx:id="fieldDiskon" layoutX="167.0" layoutY="353.0" />
+      <Button fx:id="btnTambah" layoutX="275.0" layoutY="436.0" mnemonicParsing="false" onAction="#sendData" text="Tambah" />
+      <Label layoutX="631.0" layoutY="100.0" text="Hapus Barang">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldB" layoutX="601.0" layoutY="142.0" />
+      <Label layoutX="487.0" layoutY="146.0" text="Barcode Barang" />
+      <Button fx:id="btnDelete" layoutX="726.0" layoutY="183.0" mnemonicParsing="false" onAction="#deleteData" text="Hapus" />
+      <TableView fx:id="TBBarang" layoutX="98.0" layoutY="539.0" prefHeight="200.0" prefWidth="666.0">
+         <columns>
+            <TableColumn fx:id="barcode" prefWidth="68.0" text="Barcode" />
+            <TableColumn fx:id="expired" prefWidth="116.79998779296875" text="Expired" />
+            <TableColumn fx:id="nama_produk" prefWidth="129.5999755859375" text="Nama Barang" />
+            <TableColumn fx:id="harga" prefWidth="114.4000244140625" text="Harga" />
+            <TableColumn fx:id="jumlah" prefWidth="90.4000244140625" text="Jumlah" />
+            <TableColumn fx:id="diskon" prefWidth="76.0" text="Diskon" />
+            <TableColumn fx:id="kategori" prefWidth="68.79996337890623" text="Kategori" />
+         </columns>
+      </TableView>
+      <Label layoutX="356.0" layoutY="494.0" text="List Barang">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="394.0" text="Kategori" />
+      <TextField fx:id="fieldKategori" layoutX="167.0" layoutY="394.0" />
+   </children>
+</AnchorPane>
